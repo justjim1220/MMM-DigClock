@@ -1,0 +1,28 @@
+.MMM-DigClock {
+  width: 300px;
+  align-content: center;
+}
+
+.MMM-DigClock .date {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.MMM-DigClock .time {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff000;
+}
+
+.MMM-DigClock .seconds {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+.MMM-DigClock .week {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0000ff;
+}
