@@ -1,14 +1,14 @@
 # Module: MMM-DigClock
-|The `clock` module is one of the default modules of the MagicMirror.
-|This module is a variation only showing the Digital Clock.
-|I made this because I wanted to be able to use the 'clock' module on separate pages of my Mirror.
-|This module displays the current date, week, and time in realtime.
+The `clock` module is one of the default modules of the MagicMirror.<br>
+This module is a variation only showing the Digital Clock.<br>
+I made this because I wanted to be able to use the 'clock' module on separate pages of my Mirror.<br>
+This module displays the current date, week, and time in realtime.<br>
 
 ## Installation
-|from the Magic/modules directory
-|git clone https://github.com/justjim1220/MMM-DigClock.git
-|cd MMM-DigClock
-|npm install
+from the Magic/modules directory<br>
+git clone https://github.com/justjim1220/MMM-DigClock.git<br>
+cd MMM-DigClock<br>
+npm install<br>
 
 ## Using the module
 To use this module, add it to the modules array in the `config/config.js` file:
