@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/1467e2d37ec60cc50117a8db7c24f626?family=DS-Digital);*/
+@import url(//db.onlinewebfonts.com/c/1467e2d37ec60cc50117a8db7c24f626?family=DS-Digital);
 
 /* @-webkit-keyframes blink {
   0% {
@@ -19,39 +19,27 @@
 } */
 
 .MMM-DigClock {
-  width: 1000px;
-  padding-bottom: 50px;
+  width: 400px;
+  padding-bottom: 10px;
   align-content: center;
 }
 
 .MMM-DigClock .date {
-  font-size: 85px;
-  line-height: 100px;
+  font-size: 50px;
+  line-height: 60px;
   letter-spacing: 5px;
-  font-weight: 800;
+  font-weight: 600;
   color: #ff0000;
 }
 
 .MMM-DigClock .time {
-  font-size: 125px;
-  line-height: 125px;
+  font-size: 75px;
+  line-height: 85px;
   letter-spacing: 5px;
   font-family: DS-Digital;
   font-weight: 900;
   color: #ff0000;
 }
-
-/*
-.MMM-DigClock .seconds {
-  font-size: 125px;
-  line-height: 125px;
-  letter-spacing: 5px;
-  font-weight: 900;  
-  font-family: "LCD AT&T Phone Time/Date";
-  color: #ff0000;
-  -webkit-animation: blink 1s linear infinite;
-  animation: blink 1s linear infinite;
-} */
 
 .MMM-DigClock .week {
   font-size: 75px;
