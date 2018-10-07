@@ -6,8 +6,9 @@ This module displays the current date, week, and time in realtime.<br>
 
 ## Screenshot
 I'm pretty sure you all know what it looks like, but here is a pic of what mine looks like:
+`
 ![](Screenshot (363).png)
-
+`
 ## Installation
 from the Magic/modules directory<br>
 git clone https://github.com/justjim1220/MMM-DigClock.git<br>
