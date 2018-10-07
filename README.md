@@ -6,7 +6,7 @@ This module displays the current date, week, and time in realtime.<br>
 
 ## Example
 
-![](Screenshot (363).png)
+![](Screenshot.png)
 
 ## Installation
 from the Magic/modules directory<br>
