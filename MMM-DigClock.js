@@ -7,7 +7,8 @@
  * written by Michael Teeuw http://michaelteeuw.nl]
  * 
  * I wanted a way to use both the digital and analog clocks
- * on different pages of my MM2
+ * on different pages of my MM2. And I wanted to to have it look
+ * like the "old school" digital clocks!
  *
  * NOT tested with Raspberry Pi or Linux-Based systems.
  * It DOES work with Windows 10!!!
