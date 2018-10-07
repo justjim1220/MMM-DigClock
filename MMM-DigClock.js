@@ -122,6 +122,9 @@ Module.register("MMM-DigClock", {
 		digitalWrapper.appendChild(timeWrapper);
 		digitalWrapper.appendChild(weekWrapper);
 
+		wrapper.appendChild(digitalWrapper);
+
 		return wrapper;
 	}
 });
+

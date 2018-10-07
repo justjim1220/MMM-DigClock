@@ -1,28 +1,57 @@
+/* @-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
 .MMM-DigClock {
-  width: 300px;
+  width: 1000px;
+  padding-bottom: 50px;
   align-content: center;
 }
 
 .MMM-DigClock .date {
-  font-size: 30px;
-  font-weight: bold;
-  color: #ff0000;
-}
-
-.MMM-DigClock .time {
-  font-size: 30px;
+  font-size: 75px;
+  line-height: 90px;
+  letter-spacing: 3px;
   font-weight: bold;
   color: #fff000;
 }
 
-.MMM-DigClock .seconds {
-  font-size: 30px;
+.MMM-DigClock .time {
+  font-size: 90px;
+  line-height: 105px;
+  letter-spacing: 5px;
   font-weight: bold;
-  color: #00ff00;
+  color: #ff0000;
+}
+
+.MMM-DigClock .seconds {
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: white;
+  /* -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite; */
 }
 
 .MMM-DigClock .week {
-  font-size: 30px;
+  font-size: 75px;
+  line-height: 90px;
+  letter-spacing: 3px;
   font-weight: bold;
   color: #0000ff;
 }
