@@ -25,13 +25,10 @@ Module.register("MMM-DigClock", {
 	defaults: {
 		timeFormat: config.timeFormat,
 		displaySeconds: true,
-		showPeriod: true,
-		showPeriodUpper: false,
-		clockBold: true,
 		showDate: true,
-		showWeek: true,
-		dateFormat: "dddd, LL",
-		timezone: null
+		showWeek: false,
+		dateFormat: "ddd, ll",
+		timezone: "American/Chicago"
 	},
 
 	requiresVersion: "2.1.0",
@@ -44,7 +41,7 @@ Module.register("MMM-DigClock", {
 
 	// Define styles.
 	getStyles: function() {
-		return ["MMM-DigClock.css"];
+		return ["MMM-DigClock.css", "DS-Digital.css"];
 	},
 
 	// Define start sequence.
@@ -70,13 +67,10 @@ Module.register("MMM-DigClock", {
 
 		var dateWrapper = document.createElement("div");
 		var timeWrapper = document.createElement("div");
-		var secondsWrapper = document.createElement("sup");
-		var periodWrapper = document.createElement("span");
 		var weekWrapper = document.createElement("div");
 
 		dateWrapper.className = "date";
 		timeWrapper.className = "time";
-		secondsWrapper.className = "seconds";
 		weekWrapper.className = "week";
 
 		var timeString;
@@ -85,16 +79,12 @@ Module.register("MMM-DigClock", {
 			now.tz(this.config.timezone);
 		}
 
-		var hourSymbol = "HH:";
+		var hourSymbol = "HH";
 		if (this.config.timeFormat !== 24) {
-			hourSymbol = "h:";
+			hourSymbol = "h";
 		}
 
-		if (this.config.clockBold === true) {
-			timeString = now.format(hourSymbol + "[<span class=\"bold\">]mm[</span>]");
-		} else {
-			timeString = now.format(hourSymbol + "mm");
-		}
+		timeString = now.format(hourSymbol + ":mm" + ":ss");
 
 		if(this.config.showDate){
 			dateWrapper.innerHTML = now.format(this.config.dateFormat);
@@ -103,18 +93,6 @@ Module.register("MMM-DigClock", {
 			weekWrapper.innerHTML = this.translate("WEEK", { weekNumber: now.week() });
 		}
 		timeWrapper.innerHTML = timeString;
-		secondsWrapper.innerHTML = now.format(":ss");
-		if (this.config.showPeriodUpper) {
-			periodWrapper.innerHTML = now.format("A");
-		} else {
-			periodWrapper.innerHTML = now.format("a");
-		}
-		if (this.config.displaySeconds) {
-			timeWrapper.appendChild(secondsWrapper);
-		}
-		if (this.config.showPeriod && this.config.timeFormat !== 24) {
-			timeWrapper.appendChild(periodWrapper);
-		}
 
 		digitalWrapper = document.createElement("div");
 		digitalWrapper.className = "digital";
