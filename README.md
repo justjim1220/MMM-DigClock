@@ -4,6 +4,10 @@ This module is a variation only showing the Digital Clock.<br>
 I made this because I wanted to be able to use the 'clock' module on separate pages of my Mirror.<br>
 This module displays the current date, week, and time in realtime.<br>
 
+## Screenshot
+I'm pretty sure you all know what it looks like, but here is a pic of what mine looks like:
+![](Capture2.JPG)
+
 ## Installation
 from the Magic/modules directory<br>
 git clone https://github.com/justjim1220/MMM-DigClock.git<br>
