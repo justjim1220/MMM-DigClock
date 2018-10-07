@@ -24,7 +24,6 @@ Module.register("MMM-DigClock", {
 	// Module config defaults.
 	defaults: {
 		timeFormat: config.timeFormat,
-		displaySeconds: true,
 		showDate: true,
 		showWeek: false,
 		dateFormat: "ddd, ll",
