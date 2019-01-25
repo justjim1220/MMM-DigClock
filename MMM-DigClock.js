@@ -5,7 +5,7 @@
  *
  * The digital only part of the default MM2 clock
  * written by Michael Teeuw http://michaelteeuw.nl]
- * 
+ *
  * I wanted a way to use both the digital and analog clocks
  * on different pages of my MM2. And I wanted to to have it look
  * like the "old school" digital clocks!
@@ -28,7 +28,7 @@ Module.register("MMM-DigClock", {
 		showDate: true,
 		showWeek: false,
 		dateFormat: "ddd, ll",
-		timezone: "American/Chicago"
+		timezone: "America/Chicago"
 	},
 
 	requiresVersion: "2.1.0",
@@ -53,7 +53,7 @@ Module.register("MMM-DigClock", {
 		setInterval(function() {
 			self.updateDom();
 		}, 1000);
-		
+
 		"use strict",
 
 		// Set locale.
