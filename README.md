@@ -19,6 +19,7 @@ modules: [
 		config: {
 			showDate: true,
 			showWeek: false,
+			showSeconds: false,
 			dateFormat: "ddd, ll",
 			timezone: "America/Chicago"
 		}
@@ -34,5 +35,6 @@ The following properties can be configured:
 | ----------------- | -----------
 | `showDate`        | Turn off or on the Date section. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `true`
 | `showWeek`        | Turn off or on the Week section. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `false`
+| `showSeconds`     | Turn off or on the Seconds. <br><br> **Possible values:** `true` or `false` <br> **Default value:** `false`
 | `dateFormat`      | Configure the date format as you like. <br><br> **Possible values:** [Docs](http://momentjs.com/docs/#/displaying/format/) <br> **Default value:** `"dddd, LL"`
 | `timezone`        | Specific a timezone to show clock. <br><br> **Possible examples values:** `"America/New_York"`, `"America/Santiago"`, `Etc/GMT+10` <br> **Default value:** `"America/Chicago"`. See more informations about configuration value [here](https://momentjs.com/timezone/docs/#/data-formats/packed-format/)
