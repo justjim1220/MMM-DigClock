@@ -7,6 +7,9 @@ This module displays the current date, week, and time. The information will be u
 ## Screenshots
 
 ![ScreenShot](https://github.com/justjim1220/MMM-DigClock/blob/master/Screenshot%20(3).png)
+![ScreenShot](https://github.com/justjim1220/MMM-DigClock/blob/master/Screenshot%20(27).png)
+![ScreenShot](https://github.com/justjim1220/MMM-DigClock/blob/master/Screenshot%20(28).png)
+![ScreenShot](https://github.com/justjim1220/MMM-DigClock/blob/master/Screenshot%20(29).png)
 
 ## Using the module
 
