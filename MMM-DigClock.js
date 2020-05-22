@@ -16,7 +16,7 @@
  * version: 1.0.0
  *
  * Modified module by Jim Hallock (justjim1220@gmail.com)
- *
+ * Fixed the Seconds bug by Ramez (@theramez)
  * Licensed with a crapload of good ole' Southern Sweet Tea
  * and a lot of Cheyenne Extreme Menthol cigars!!!
  */
@@ -27,6 +27,7 @@ Module.register("MMM-DigClock", {
 		timeFormat: config.timeFormat,
 		showDate: true,
 		showWeek: false,
+		showSeconds: false,
 		dateFormat: "ddd, ll",
 		timezone: "America/Chicago"
 	},
@@ -83,9 +84,12 @@ Module.register("MMM-DigClock", {
 		if (this.config.timeFormat !== 24) {
 			hourSymbol = "h";
 		}
-
-		timeString = now.format(hourSymbol + ":mm" + ":ss");
-
+		if(this.config.showSeconds){
+			timeString = now.format(hourSymbol + ":mm" + ":ss");
+		}
+		else {
+			timeString = now.format(hourSymbol + ":mm");
+		}
 		if(this.config.showDate){
 			dateWrapper.innerHTML = now.format(this.config.dateFormat);
 		}
@@ -105,4 +109,3 @@ Module.register("MMM-DigClock", {
 		return wrapper;
 	}
 });
-
